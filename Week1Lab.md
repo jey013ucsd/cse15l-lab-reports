@@ -101,3 +101,8 @@ ssh-add $env:USERPROFILE\.ssh\id_ed25519
 * Commands can be ran without having to log into the server
 * Add the command in quotation marks after `ssh cs15lfa22hp@ieng6.ucsd.edu`
 * Screenshot is an example using ls
+
+
+![image](https://user-images.githubusercontent.com/114262093/193376355-f22c1b4d-006c-4b1b-829d-a69ee7b57871.png)
+
+* Multiple commands can be run on the same line by adding a semicolon in between them
