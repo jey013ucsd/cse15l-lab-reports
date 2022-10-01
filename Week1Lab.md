@@ -30,3 +30,15 @@
 
 
 # TRYING SOME COMMANDS
+
+
+![image](https://user-images.githubusercontent.com/114262093/193375572-3dc2c488-81ed-4e4d-8f00-1c8353d6829d.png)
+
+* Try out some commands such as: 
+
+```
+$ cs ~
+$ ls -lat
+$ ls -a
+$ ls /home/linux/ieng6/cs15lfa22/cs15lfa22<username>
+```
