@@ -74,12 +74,30 @@ java WhereAmI
 
 # SETTING AN SSH KEY
 
+* Run `$ ssh-keygen` and press enter whenever prompted
+* Open Windows Powershell as adminstrator
+* Run the following coommands: 
 
+```
+Get-Service ssh-agent | Set-Service -StartupType Automatic
+Start-Service ssh-agent
+Get-Service ssh-agent
+ssh-add $env:USERPROFILE\.ssh\id_ed25519
+```
 
+![image](https://user-images.githubusercontent.com/114262093/193376074-7343e88e-b05b-40a8-a9ff-9863b0857dea.png)
 
-
+* Log into server and run `$ mkdir .ssh`
+* Log out and run `$ scp /Users/coolj/.ssh/id_rsa.pub cs15lfa22hp@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+* To ensure it is working, try to log back in and it should not require a password
 
 
 
 
 # OPTIMIZING REMOTE RUNNING
+
+![image](https://user-images.githubusercontent.com/114262093/193376254-a5ff8db5-b6e8-4352-a5a8-0c891207e330.png)
+
+* Commands can be ran without having to log into the server
+* Add the command in quotation marks after `ssh cs15lfa22hp@ieng6.ucsd.edu`
+* Screenshot is an example using ls
