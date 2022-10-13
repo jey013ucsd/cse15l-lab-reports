@@ -4,7 +4,7 @@
 
 ![image](https://user-images.githubusercontent.com/114262093/193373251-babb9c46-64ee-4528-8a79-39b77f4dd1ca.png)
 
-* Navigate to https://code.visualstudio.com/ and download
+* Navigate to [Link](https://code.visualstudio.com/) and download
 * Launch the downloaded file and install vscode
 
 
