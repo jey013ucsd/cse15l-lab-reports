@@ -37,10 +37,10 @@
 * Try out some commands such as: 
 
 ```
-$ cs ~
-$ ls -lat
-$ ls -a
-$ ls /home/linux/ieng6/cs15lfa22/cs15lfa22<username>
+$ cd ~ // moves to home directory
+$ ls -lat // displays all the files in the directory and information about them such as server and time of accesss
+$ ls -a // displays all files, including hidden ones
+$ ls /home/linux/ieng6/cs15lfa22/cs15lfa22<username> // displays all files in the path
 ```
 
 
@@ -53,7 +53,19 @@ $ ls /home/linux/ieng6/cs15lfa22/cs15lfa22<username>
 
 ![image](https://user-images.githubusercontent.com/114262093/193375872-4dac9828-4ad5-43c3-960a-7e04bb80107b.png)
 
-* Create a new notepad document and copy and paste WhereAmI code
+* Create a new notepad document and copy and paste WhereAmI code:
+
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
+
 * Save file as "WhereAmI.java"
 
 ![image](https://user-images.githubusercontent.com/114262093/193375915-36ffd99f-af37-4538-bd48-f323f1b7c42e.png)
