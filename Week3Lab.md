@@ -1,4 +1,4 @@
-#Search Engine code:
+# Search Engine code:
 
 ```
 import java.io.IOException;
@@ -65,3 +65,27 @@ class SearchEngine {
     }
 }
 ```
+
+![image](https://user-images.githubusercontent.com/114262093/195958392-6272c3e9-7700-469f-ac6e-602a204ca7c2.png)
+
+* By default, the search engine contains no terms
+* An if statement checks if nothing is added to the end of the url; if so, the page returns the arraylist of stored terms, which is currently empty, in a String with commas
+
+
+![image](https://user-images.githubusercontent.com/114262093/195958477-374b7d58-210f-477a-a166-3d09610c7b0f.png)
+
+* When an if statements detects that "/add" is at the end of the url, it takes the isolates the string in the query and adds it to the arraylist of terms to be stored
+* "/add?t=apple" adds the word apple to the search engine
+
+
+![image](https://user-images.githubusercontent.com/114262093/195958736-82ae1098-e7c5-4582-a2e0-0be2ba4d9af5.png)
+
+* After adding several more terms to the searchengine. The arraylist of terms contains the above.
+
+
+![image](https://user-images.githubusercontent.com/114262093/195959015-c6ec3e0c-a154-499e-9973-05890eda75ce.png)
+
+* An if statement checks if "/search" is at the end of the url. If so, it isolates the String in the query as the term to be searched for
+* A for loop goes through each element of the arraylist of stored terms and if they contain the search term, it is added to a new arraylist of "found terms"
+* After finishing the loop, the found terms array is returned as a string with commas
+* Since apple and pineapple both contain "pple", they are returned as seen above
