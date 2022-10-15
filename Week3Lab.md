@@ -89,3 +89,19 @@ class SearchEngine {
 * A for loop goes through each element of the arraylist of stored terms and if they contain the search term, it is added to a new arraylist of "found terms"
 * After finishing the loop, the found terms array is returned as a string with commas
 * Since apple and pineapple both contain "pple", they are returned as seen above
+
+
+
+
+# Part 2 Bugs
+
+**Reversed:**
+ * Failure inducing input: {1, 2, 3}
+ * Symptoms: The method would return an array of all 0's: {0, 0, 0}
+ * Bug: The code created a new array to house the reversed elements. However, it assigned the elements of the new array to the input array in reversed order rather than the other way around. It then returned the input array instead of the new array. Since the new array is initialized with all 0's, the input array was populated with the same 0's, resulting in the method returning {0, 0, 0}. To fix this, we need to reassign the values of the new array with the reversed elements of the input array and return the new array.
+
+**Filter:**
+
+ * Failure inducing input: {"one", "two", "three"}
+ * Symptoms: The method returns the input array in reverse order: {"three", "two", "one"}
+ * Bug: The code adds all the elements of the input arraylist that are strings into a new arraylist that is returned. However, when adding the elements to the new arraylist, the method adds them all to the 0th index: it adds the elements to the front rather than the last, resulting in an arraylist in reverse order. To fix this, we need to add the elements to the end by using .add(s) instead of .add(0, s).
