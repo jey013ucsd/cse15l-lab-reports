@@ -1,6 +1,6 @@
-#-name
+# -name
 
-Useful for finding a specific file with a speicfic name
+Finds files matching the pattern. Useful for finding a specific file with a speicfic name
 
 ```
 $ find technical -name chapter-1.txt
@@ -27,9 +27,9 @@ Finds files with the name "1468-6708-3-1.txt" in the biomed directory.
 
 ---
 
-#-type
+# -type
 
-Useful for finding files of a specific type, such as finding a directory
+Finds files of a specific type. Useful for finding files of a specific type, such as finding a directory
 
 ```
 $ find technical -type d
@@ -86,3 +86,43 @@ Finds all regular files in technical/government/Post_Rate_Comm.
 
 ---
 
+# -mmin
+
+Finds files modified a specified number of minutes ago. Useful for detecting changes.
+
+```
+$ find technical -mmin 1
+technical/government/Post_Rate_Comm/Cohenetal_Cost_Function.txt
+```
+After modifying this file. Finds files modified 1 minute ago.
+
+
+
+```
+$ find technical/government/Post_Rate_Comm -mmin +1
+technical/government/Post_Rate_Comm
+technical/government/Post_Rate_Comm/Cohenetal_comparison.txt
+technical/government/Post_Rate_Comm/Cohenetal_Cost_Function.txt
+technical/government/Post_Rate_Comm/Cohenetal_CreamSkimming.txt
+technical/government/Post_Rate_Comm/Cohenetal_DeliveryCost.txt
+technical/government/Post_Rate_Comm/Cohenetal_RuralDelivery.txt
+technical/government/Post_Rate_Comm/Cohenetal_Scale.txt
+technical/government/Post_Rate_Comm/Gleiman_EMASpeech.txt
+technical/government/Post_Rate_Comm/Gleiman_gca2000.txt
+technical/government/Post_Rate_Comm/Mitchell_6-17-Mit.txt
+technical/government/Post_Rate_Comm/Mitchell_RMVancouver.txt
+technical/government/Post_Rate_Comm/Mitchell_spyros-first-class.txt
+technical/government/Post_Rate_Comm/Redacted_Study.txt
+technical/government/Post_Rate_Comm/ReportToCongress2002WEB.txt
+technical/government/Post_Rate_Comm/WolakSpeech_usps.txt
+```
+Finds files in technical/government/Post_Rate_Comm that have been modified over a minute ago
+
+
+
+
+```
+$ find technical/government/Post_Rate_Comm -mmin +1 -mmin -6
+technical/government/Post_Rate_Comm/Cohenetal_Cost_Function.txt
+```
+Finds files in technical/government/Post_Rate_Comm that have been modified between 1 and 6 minutes ago.
