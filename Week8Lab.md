@@ -54,8 +54,11 @@ fi
 # Trace for https://github.com/ucsd-cse15l-f22/list-methods-filename
 
 Line 3: stdout = n/a, stderr = n/a, return code = 0
+
 Line 4: stdout = n/a, stderr = n/a, return code = 0
+
 Line 5: stdout = "Finished Cloning", stderr = n/a, return code = 0
+
 Line 6: stdout = n/a, stderr = n/a, return code = 0
 Line 7: stdout = n/a, stderr = n/a, return code = 0
 Line 8: stdout = n/a, stderr = n/a, return code = 0
