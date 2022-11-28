@@ -60,10 +60,17 @@ Line 4: stdout = n/a, stderr = n/a, return code = 0
 Line 5: stdout = "Finished Cloning", stderr = n/a, return code = 0
 
 Line 6: stdout = n/a, stderr = n/a, return code = 0
+
 Line 7: stdout = n/a, stderr = n/a, return code = 0
+
 Line 8: stdout = n/a, stderr = n/a, return code = 0
+
 Line 10: false because "ListExamples.java" is not a file. "ListMethods.java" is a file, however.
+
 Line 11: is not run because the if statement is false
+
 Line 13: stdout = "ListExamples.java not found", stderr = n/a, return code = 0
+
 Line 14: stdout = n/a, stderr = n/a, return code = 1
+
 Line... : the rest of the script does not run because the exit command is run
