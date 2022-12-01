@@ -6,9 +6,18 @@ Task: In DocSearchServer.java, add a new line right before File[] paths = f.list
 /
 File[]
 <enter>
+```
+![image](https://user-images.githubusercontent.com/114262093/205028448-7c47573e-29fe-4178-b36c-46ab2a91c0a1.png)
+
+```
 i
 System.out.println(f.toString() + " is a directory");
+<enter>
 <esc>
+```
+![image](https://user-images.githubusercontent.com/114262093/205028747-dd14572c-5bb5-4660-a335-476312e1d1f4.png)
+
+```
 <esc>
 :wq
 ```
